@@ -9,16 +9,20 @@ const Quote = () => {
     useEffect(() => {
         async function fetchQuote() {
             const request = await axios.get(GOT_API_URL);
-            setQuotes(request.data.results);
+            setQuotes(request.data.sentence);
             console.log(request);
             return request;
         }
         fetchQuote();
     }, [GOT_API_URL])
+
+    console.log(quotes);
     
     return (
-        <div style={{ color: "white" }}>
-            
+        <div style={{ color: "#FF0266" }}>
+            <h3 style={{ "text-align": "center", "margin-bottom": "20px"}}>
+            {quotes}
+        </h3>
         </div>
     )
 }
