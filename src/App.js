@@ -19,7 +19,11 @@ function App() {
       <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
       <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} />
       <Row title="Documentaries" fetchUrl={requests.fetchDocumantaries} />
-      
+
+      <h2 className="spirited_away">
+        <iframe src="https://drive.google.com/file/d/1GkBsVNDn2kjWT-1XxznIBFaFtLeO3tPE/preview" width="640" height="480" allow="autoplay" title='Spirited Away'></iframe>
+      </h2>
+
     </div>
   );
 }
