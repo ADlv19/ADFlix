@@ -22,7 +22,7 @@ function Row({title, fetchUrl}){
  
     return(
         <div>
-            <h2> { title } </h2>
+            <h2> { title} </h2>
             <div className="row__posters">
                 {movies.map(movie => (
                     <img 

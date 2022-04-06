@@ -9,6 +9,10 @@
     display: none;
 }
 
+div h2{
+    color: azure;
+}
+
 .row__poster{
     object-fit: contain;
     width: 100%;
