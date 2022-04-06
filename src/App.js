@@ -2,11 +2,15 @@ import React from 'react';
 import './App.css';
 import Row from './Row';
 import requests from './Requests'
+import Quote from './Quote';
 
 function App() {
   return (
     <div className="App">
       <h1>ADFlix</h1>
+      <h3>
+        <Quote/>
+      </h3>
       <Row title="NotFlix ORIGINALS" fetchUrl={requests.fetchNetflixOriginals} />
       <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
       <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
