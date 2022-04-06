@@ -1,22 +1,11 @@
 * {
   margin: 0;
+}
+
+.all_rows{
   background-color: black;
-  
 }
 
-h1 {
-  padding-top: 10px;
-  color: red;
-  text-align: center;
-  transition: transform 200ms;
-}
-
-h1:hover{
-  transform: scale(1.5);
-  opacity: 1;
-  margin-bottom: 20px;
-}
-
-h2 iframe{
-  align-content: center;
+header div h1{
+  color: aliceblue;
 }
