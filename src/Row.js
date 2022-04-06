@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useState , useEffect} from "react";
+import instance from './axios';
 
-function Row({title}){
+function Row({title, fetchUrl}){
+
+    const [movies, setMovies] = useState([])
+
+    useEffect(()=>{
+
+    }, []);
+ 
     return(
         <div>
-            <h2>
-                { title }
-            </h2>
+            <h2> { title } </h2>
         </div>
     )
 }
