@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import Row from './Row';
 import requests from './Requests'
-import Quote from './Quote';
 import Banner from './Banner'
 
 function App() {
@@ -25,7 +24,7 @@ function App() {
       
 
       <h2 className="spirited_away">
-        <iframe src="https://drive.google.com/file/d/1GkBsVNDn2kjWT-1XxznIBFaFtLeO3tPE/preview" width="640" height="480" allow="autoplay" title='Spirited Away'></iframe>
+        <iframe src="https://drive.google.com/file/d/1GkBsVNDn2kjWT-1XxznIBFaFtLeO3tPE/preview" allow="autoplay" title='Spirited Away'></iframe>
       </h2>
 
     </div>
