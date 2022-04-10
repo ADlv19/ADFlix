@@ -39,15 +39,12 @@ const Banner = () => {
                 backgroundPosition: "center center",
             }}>
             
-            <div>
-                <h1
-                    className="ad__flix"
-                    style={{ color: "red"}}
-                >ADFlix</h1>
+            {<div>
                 <Quote />
-            </div>
+            </div>}
 
             <div className="banner__contents">
+                
                 <h1 className="banner__title">
                     {movie?.title || movie?.name || movie?.original_name}
                 </h1>
@@ -58,7 +55,7 @@ const Banner = () => {
                 </div>
 
                 <h4 className="banner__description">
-                    {truncate(movie?.overview,150)}
+                    { truncate(movie?.overview, 150) }
                 </h4>
                 
             </div>
