@@ -19,7 +19,7 @@ function Row({title, fetchUrl, isLargeRow}){
 
     console.log(movies);
  
-    
+
     return(
         <div>
             <h2> { title } </h2>
