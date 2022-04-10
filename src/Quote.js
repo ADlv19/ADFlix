@@ -19,12 +19,12 @@ const Quote = () => {
     console.log(quotes);
     
     return (
-        <div style={{ color: "#FF0266" ,"text-align": "center"}}>
+        <div style={{ color: "#FF0266" ,"textAlign": "center"}}>
             <h1
                 className="ad__flix"
                  style={{ color: "red"}}
                     >ADFlix</h1>
-            <h3 style={{"margin-bottom": "20px"}}>
+            <h3 style={{"marginBottom": "20px"}}>
                 {quotes}
             </h3>
         </div>

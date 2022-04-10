@@ -22,10 +22,11 @@ function App() {
         <Row title="Documentaries" fetchUrl={requests.fetchDocumantaries} />
       </div>
       
+      <iframe src="https://drive.google.com/file/d/1GkBsVNDn2kjWT-1XxznIBFaFtLeO3tPE/preview" allow="autoplay" title='Spirited Away'></iframe>
 
-      <h2 className="spirited_away">
+      {/* <h2 className="spirited_away">
         <iframe src="https://drive.google.com/file/d/1GkBsVNDn2kjWT-1XxznIBFaFtLeO3tPE/preview" allow="autoplay" title='Spirited Away'></iframe>
-      </h2>
+      </h2> */}
 
     </div>
   );

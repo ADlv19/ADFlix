@@ -24,10 +24,6 @@ const Banner = () => {
 
     console.log(movie);
 
-    function truncate(str , n) {
-        return str?.length > n ? str.substr(0, n - 1) + "..." : str;
-    }
-
 
     return ( 
         <header className="banner"
@@ -55,7 +51,7 @@ const Banner = () => {
                 </div>
 
                 <h4 className="banner__description">
-                    { truncate(movie?.overview, 150) }
+                    { movie?.overview }
                 </h4>
                 
             </div>
