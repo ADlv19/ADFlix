@@ -1,18 +1,27 @@
-import React from 'react';
-import './App.css';
-import Row from './Row';
-import requests from './Requests'
-import Banner from './Banner'
+import React from "react";
+import "./App.css";
+import Row from "./Row";
+import requests from "./Requests";
+import Banner from "./Banner";
+import Test from "./Test";
 
 function App() {
   return (
     <div className="App">
-      {
-        // Navigation
-      }
-      {<Banner />}
-      <div className='all_rows'>
-        <Row title="NotFlix ORIGINALS" fetchUrl={requests.fetchNetflixOriginals} isLargeRow/>
+      <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7997999080318027"
+          crossorigin="anonymous"
+        ></script>
+      </head>
+      <Banner />
+      <div className="all_rows">
+        <Row
+          title="NotFlix ORIGINALS"
+          fetchUrl={requests.fetchNetflixOriginals}
+          isLargeRow
+        />
         <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
         <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
         <Row title="Action Movies" fetchUrl={requests.fetchActionMovies} />
@@ -21,13 +30,7 @@ function App() {
         <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} />
         <Row title="Documentaries" fetchUrl={requests.fetchDocumantaries} />
       </div>
-      
-      <iframe src="https://drive.google.com/file/d/1GkBsVNDn2kjWT-1XxznIBFaFtLeO3tPE/preview" allow="autoplay" title='Spirited Away'></iframe>
-
-      {/* <h2 className="spirited_away">
-        <iframe src="https://drive.google.com/file/d/1GkBsVNDn2kjWT-1XxznIBFaFtLeO3tPE/preview" allow="autoplay" title='Spirited Away'></iframe>
-      </h2> */}
-
+      <Test />
     </div>
   );
 }
