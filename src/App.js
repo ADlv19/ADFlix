@@ -8,13 +8,6 @@ import Test from "./Test";
 function App() {
   return (
     <div className="App">
-      <head>
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7997999080318027"
-          crossorigin="anonymous"
-        ></script>
-      </head>
       <Banner />
       <div className="all_rows">
         <Row
